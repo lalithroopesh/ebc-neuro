@@ -11,3 +11,7 @@ When run in a folder with a PDBQT for each receptor and a PDBQT for the ligand, 
 compare_sets.py
 ```
 Simple, rather inelegant script to compare outputs of create_configs.py with different settings. Make sure to put both sets in separate folders, then put the script in a folder that contains both folders. Helps calculate if there is a significant difference based on exhaustiveness levels and other settings.
+```
+read_results.py
+```
+Script to read output PDBQT files from Autodock Vina and compile docking energies across multiple unique receptors using the same template. Creates a compact CSV file for later data analysis.
