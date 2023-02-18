@@ -6,7 +6,7 @@ x = ""
 while not(x.lower() == "y"):
     x = str(input("Confirm all of your _output.pdbqt files are in the in the {} folder (same as this script). (y/n) > ".format(os.getcwd())))
 
-rec_name = str(input("Enter your receptor name. Don't use special characters (besides _ and -) ex. 70ft-1 > "))
+rec_name = str(input("Enter your template name. Don't use special characters (besides _ and -) ex. 70ft-1 > "))
 job_name = rec_name + "_results"
 
 files = os.listdir("./")
@@ -31,6 +31,5 @@ for item in results:
     r_final.append(",".join(item)+"\n")
 
 with open("{}.csv".format(job_name),"w") as compiled_results:
-    for r in results:
-        compiled_results.writelines(r_final)
+    compiled_results.writelines(r_final)
     print("Wrote file {}.csv".format(job_name))
