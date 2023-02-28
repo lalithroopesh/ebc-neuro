@@ -15,3 +15,7 @@ Simple, rather inelegant script to compare outputs of create_configs.py with dif
 read_results.py
 ```
 Script to read output PDBQT files from Autodock Vina and compile docking energies across multiple unique receptors using the same template. Creates a compact CSV file for later data analysis.
+```
+get_tree.py
+```
+Creates a radial phylogenetic tree using the NCBI taxonomy database and color-codes it (heatmap) according to binding affinities of the receptor normalized to each other. Input is a csv file with no headings with the first column being the taxonomic ID number and the second being the binding affinity.
