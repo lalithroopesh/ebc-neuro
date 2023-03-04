@@ -19,3 +19,7 @@ Script to read output PDBQT files from Autodock Vina and compile docking energie
 get_tree.py
 ```
 Creates a radial phylogenetic tree using the NCBI taxonomy database and color-codes it (heatmap) according to binding affinities of the receptor normalized to each other. Input is a csv file with no headings with the first column being the taxonomic ID number and the second being the binding affinity.
+```
+create_plots.py
+```
+Simple script to create a boxplot figure with jitter data points to show distribution of binding affinities. Note that data and graph parameters must be entered manually.
